@@ -1,0 +1,103 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins" sans-serif;
+}
+header {
+  width: 100%;
+}
+header > .contayner {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h2 {
+  font-size: 35px;
+  color: green;
+  margin: 0px;
+}
+p {
+  margin: 15px;
+  padding: 0px;
+}
+button:hover {
+  background-color: green;
+  color: black;
+}
+
+.bizhakda {
+  margin-right: 20px;
+}
+
+.select {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.heart {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.telefon {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+header > .contayner > .nav {
+  display: flex;
+  font-size: 20px;
+  font-family: Poppins;
+  justify-content: space-between;
+  align-items: center;
+  color: green;
+}
+header > .contayner > .nav > a {
+  text-decoration: none;
+  color: green;
+}
+
+.foto-contayner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2);
+  justify-content: space-between;
+  margin: 30px 50px 30px 50px;
+  grid-gap: 30px;
+}
+.foto {
+  margin: 1em;
+  width: 100%;
+}
+.foto a {
+  width: 100%;
+}
+.foto a img,
+.foto p {
+  width: 100%;
+}
+.foto > .info {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 500px) {
+  .foto-contayner,
+  header > .contayner {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  background-color: black;
+  color: white;
+}
+
+p {
+  font-family: Poppins;
+  font-size: 25px;
+}
